@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Application</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex items-center justify-center h-screen bg-cover bg-center"
+    style="background-image: url(back.jpg)"
+  >
+    <div
+      class="bg-blue-50/10 p-6 rounded-xl shadow-lg shadow-slate-500 backdrop-blur"
+    >
+      <h1 class="font-serif text-2xl mb-4 text-center text-sky-50">
+        To Do list
+      </h1>
+      <input
+        type="text"
+        id="new-item"
+        placeholder="Enter new item"
+        class="font-mono w-full p-2 mb-4 border rounded-xl"
+      />
+      <button
+        id="add-item-button"
+        class="font-mono w-full bg-blue-700 text-sky-50 p-2 rounded-xl hover:bg-blue-800"
+      >
+        Add Item
+      </button>
+      <h2 class="font-mono text-xl mt-6 text-sky-50">
+        Items <span class="text-sm">(click to remove)</span>
+      </h2>
+      <ul id="items-list" class="mt-4 space-y-2"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
